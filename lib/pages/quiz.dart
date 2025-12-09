@@ -12,8 +12,7 @@ class Quiz extends StatefulWidget {
   State<Quiz> createState() => _QuizTabState();
 }
 
-class _QuizTabState extends State<Quiz>
-    with AutomaticKeepAliveClientMixin {
+class _QuizTabState extends State<Quiz> with AutomaticKeepAliveClientMixin {
   final TriviaApiService _api = TriviaApiService();
 
   bool _isLoading = true;
