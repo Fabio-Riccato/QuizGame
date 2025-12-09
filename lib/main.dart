@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'pages/quiz.dart';
 import 'pages/info.dart';
 import 'pages/result.dart';
+import 'pages/start_quiz.dart';
 
 void main() {
   runApp(const QuizApp());
@@ -88,7 +88,7 @@ class _HomeTabsPageState extends State<HomeTabsPage> {
 
         body: TabBarView(
           children: [
-            Quiz(difficulty: _selectedDifficulty),
+            const StartQuizPage(),
             const Info(),
           ],
         ),
